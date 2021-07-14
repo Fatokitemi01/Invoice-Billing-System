@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="billinginvoice.SignInPageController">
+   <children>
+      <AnchorPane fx:id="MainLayer" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="400.0" prefWidth="632.0">
+         <children>
+            <AnchorPane fx:id="Layer1" layoutX="310.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="490.0" style="-fx-background-color: white;">
+               <children>
+                  <HBox fx:id="resetPVerity" alignment="CENTER_LEFT" layoutX="125.0" layoutY="204.0" prefHeight="30.0" prefWidth="264.0" style="-fx-background-color: #ffffff; -fx-background-radius: 5px; -fx-border-radius: 5px; -fx-border-color: grey;">
+                     <children>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" opacity="0.55" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/icons8_lock_24px.png" />
+                           </image>
+                        </ImageView>
+                        <TextField fx:id="resetPV" prefHeight="32.0" prefWidth="266.0" style="-fx-background-color: transparent;" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox fx:id="resetpass" alignment="CENTER_LEFT" layoutX="125.0" layoutY="148.0" prefHeight="30.0" prefWidth="264.0" style="-fx-background-color: #ffffff; -fx-background-radius: 5px; -fx-border-radius: 5px; -fx-border-color: grey;">
+                     <children>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" opacity="0.55" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/icons8_lock_24px.png" />
+                           </image>
+                        </ImageView>
+                        <TextField fx:id="resetP" prefHeight="32.0" prefWidth="266.0" style="-fx-background-color: transparent;" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox fx:id="SignInPass1" alignment="CENTER_LEFT" layoutX="125.0" layoutY="204.0" prefHeight="30.0" prefWidth="264.0" style="-fx-background-color: #ffffff; -fx-background-radius: 5px; -fx-border-radius: 5px; -fx-border-color: grey;">
+                     <children>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" opacity="0.55" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/icons8_lock_24px.png" />
+                           </image>
+                        </ImageView>
+                        <TextField fx:id="UsernameIn1" prefHeight="32.0" prefWidth="266.0" style="-fx-background-color: transparent;" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox fx:id="SignUpPass1" alignment="CENTER_LEFT" layoutX="125.0" layoutY="260.0" prefHeight="30.0" prefWidth="264.0" style="-fx-background-color: #ffffff; -fx-background-radius: 5px; -fx-border-radius: 5px; -fx-border-color: grey;">
+                     <children>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" opacity="0.55" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/icons8_lock_24px.png" />
+                           </image>
+                        </ImageView>
+                        <TextField fx:id="UsernameUP1" prefHeight="32.0" prefWidth="266.0" style="-fx-background-color: transparent;" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" layoutX="180.0" layoutY="237.0" prefHeight="20.0" prefWidth="209.0">
+                     <children>
+                        <Label fx:id="ErrsignupEmail" alignment="CENTER_RIGHT" contentDisplay="RIGHT" textAlignment="RIGHT" textFill="RED">
+                           <font>
+                              <Font name="System Italic" size="11.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" layoutX="180.0" layoutY="293.0" prefHeight="20.0" prefWidth="209.0">
+                     <children>
+                        <Label fx:id="ErrsignupPassword" alignment="CENTER_RIGHT" contentDisplay="RIGHT" textAlignment="RIGHT" textFill="RED">
+                           <font>
+                              <Font name="System Italic" size="11.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="signinEmail" alignment="CENTER_LEFT" layoutX="125.0" layoutY="148.0" prefHeight="30.0" prefWidth="264.0" style="-fx-background-color: #ffffff; -fx-background-radius: 5px; -fx-border-radius: 5px; -fx-border-color: grey;">
+                     <children>
+                        <ImageView opacity="0.55" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/icons8_envelope_16px.png" />
+                           </image>
+                        </ImageView>
+                        <TextField fx:id="emailIN" prefHeight="32.0" prefWidth="266.0" promptText="Email" style="-fx-background-color: transparent;" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox fx:id="signinPassword" alignment="CENTER_LEFT" layoutX="125.0" layoutY="204.0" prefHeight="30.0" prefWidth="264.0" style="-fx-background-color: #ffffff; -fx-background-radius: 5px; -fx-border-radius: 5px; -fx-border-color: grey;">
+                     <children>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" opacity="0.55" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/icons8_lock_24px.png" />
+                           </image>
+                        </ImageView>
+                        <PasswordField fx:id="passwordIN" prefHeight="25.0" prefWidth="279.0" promptText="Password" style="-fx-background-color: transparent;" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </HBox>
+                  <JFXButton fx:id="signInbtn" disable="true" layoutX="125.0" layoutY="279.0" onAction="#AccessAccount" prefHeight="30.0" prefWidth="264.0" style="-fx-background-color: orange; -fx-background-radius: 13px; -fx-border-radius: 13px;" text="SIGN IN">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="ForgetPasswordbtn" layoutX="191.0" layoutY="244.0" onAction="#FOPbtnPressed" onMouseMoved="#FOPbtnmousehover" text="Forget Your Password">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </JFXButton>
+                  <Label layoutX="177.0" layoutY="38.0" prefHeight="46.0" prefWidth="153.0" text="TAXAGE">
+                     <font>
+                        <Font name="Courier New Bold" size="30.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/icons8_microsoft_edge_48px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+                  <Label fx:id="signinLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="188.0" layoutY="122.0" text="Sign in with email account" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <HBox fx:id="signUpName" alignment="CENTER_LEFT" layoutX="125.0" layoutY="148.0" prefHeight="30.0" prefWidth="264.0" style="-fx-background-color: #ffffff; -fx-background-radius: 5px; -fx-border-radius: 5px; -fx-border-color: grey;">
+                     <children>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" opacity="0.55" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/icons8_user_120px.png" />
+                           </image>
+                        </ImageView>
+                        <TextField fx:id="UsernameUP" prefHeight="32.0" prefWidth="266.0" promptText="Username" style="-fx-background-color: transparent;" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox fx:id="SignUpEmail" alignment="CENTER_LEFT" layoutX="125.0" layoutY="204.0" prefHeight="30.0" prefWidth="264.0" style="-fx-background-color: #ffffff; -fx-background-radius: 5px; -fx-border-radius: 5px; -fx-border-color: grey;">
+                     <children>
+                        <ImageView opacity="0.55" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/icons8_envelope_16px.png" />
+                           </image>
+                        </ImageView>
+                        <TextField fx:id="EmailUP" prefHeight="32.0" prefWidth="266.0" promptText="Email" style="-fx-background-color: transparent;" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox fx:id="SignUpPass" alignment="CENTER_LEFT" layoutX="125.0" layoutY="260.0" prefHeight="30.0" prefWidth="264.0" style="-fx-background-color: #ffffff; -fx-background-radius: 5px; -fx-border-radius: 5px; -fx-border-color: grey;">
+                     <children>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" opacity="0.55" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/icons8_lock_24px.png" />
+                           </image>
+                        </ImageView>
+                        <PasswordField fx:id="passwordUP" prefHeight="25.0" prefWidth="279.0" promptText="Password" style="-fx-background-color: transparent;" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </HBox>
+                  <Label fx:id="CreateAccountLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="219.0" layoutY="122.0" text="Create Account" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="getStartedBtn" layoutX="125.0" layoutY="357.0" onAction="#getStartedBtnPressed" prefHeight="30.0" prefWidth="264.0" style="-fx-background-color: #235BA3; -fx-background-radius: 13px; -fx-border-radius: 13px;" text="Get Started" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </JFXButton>
+                  <ImageView fitHeight="30.0" fitWidth="33.0" layoutX="202.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/icons8_Facebook_Circled_120px.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="33.0" layoutX="244.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/icons8_google_plus_120px.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="33.0" layoutX="289.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/icons8_LinkedIn_Circled_120px_1.png" />
+                     </image>
+                  </ImageView>
+                  <HBox fx:id="SignUpBusiness" alignment="CENTER_LEFT" layoutX="125.0" layoutY="316.0" prefHeight="30.0" prefWidth="264.0" style="-fx-background-color: #ffffff; -fx-background-radius: 5px; -fx-border-radius: 5px; -fx-border-color: grey;">
+                     <children>
+                        <ImageView fitHeight="20.0" fitWidth="22.0" opacity="0.55" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/icons8_business_building_120px_1.png" />
+                           </image>
+                        </ImageView>
+                        <TextField fx:id="BusinessUP" prefHeight="32.0" prefWidth="266.0" promptText="Businesss Name" style="-fx-background-color: transparent;" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox fx:id="ResetEmailAddress" alignment="CENTER_LEFT" layoutX="125.0" layoutY="148.0" prefHeight="30.0" prefWidth="264.0" style="-fx-background-color: #ffffff; -fx-background-radius: 5px; -fx-border-radius: 5px; -fx-border-color: grey;" visible="false">
+                     <children>
+                        <ImageView opacity="0.55" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/icons8_envelope_16px.png" />
+                           </image>
+                        </ImageView>
+                        <TextField fx:id="txt_ResetEmail" prefHeight="32.0" prefWidth="266.0" promptText="Enter Email" style="-fx-background-color: transparent;" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </HBox>
+                  <JFXButton fx:id="ResetEmailSendbtn" layoutX="408.0" layoutY="151.0" onAction="#ResetlSendbtn" prefHeight="20.0" prefWidth="66.0" style="-fx-background-color: orange; -fx-background-radius: 13px; -fx-border-radius: 13px;" text="Send" visible="false">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="ResetVaryCodebtn" layoutX="126.0" layoutY="250.0" onAction="#VaryCodebtn" prefHeight="30.0" prefWidth="264.0" style="-fx-background-color: orange; -fx-background-radius: 13px; -fx-border-radius: 13px;" text="Verify Code" visible="false">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </JFXButton>
+                  <Label fx:id="RecoverLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="218.0" layoutY="122.0" text="Reset Password" textAlignment="CENTER" visible="false">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <HBox fx:id="NewPassWord" alignment="CENTER_LEFT" layoutX="125.0" layoutY="148.0" prefHeight="30.0" prefWidth="264.0" style="-fx-background-color: #ffffff; -fx-background-radius: 5px; -fx-border-radius: 5px; -fx-border-color: grey;" visible="false">
+                     <children>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" opacity="0.55" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/icons8_lock_24px.png" />
+                           </image>
+                        </ImageView>
+                        <PasswordField fx:id="txt_NewPassWord" prefHeight="25.0" prefWidth="279.0" promptText="New Password" style="-fx-background-color: transparent;" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox fx:id="NewPasswordVerify" alignment="CENTER_LEFT" layoutX="125.0" layoutY="204.0" prefHeight="30.0" prefWidth="264.0" style="-fx-background-color: #ffffff; -fx-background-radius: 5px; -fx-border-radius: 5px; -fx-border-color: grey;" visible="false">
+                     <children>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" opacity="0.55" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/icons8_lock_24px.png" />
+                           </image>
+                        </ImageView>
+                        <PasswordField fx:id="txt_NewPasswordVerify" prefHeight="25.0" prefWidth="279.0" promptText="Verify Password" style="-fx-background-color: transparent;" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" layoutX="180.0" layoutY="181.0" prefHeight="20.0" prefWidth="209.0">
+                     <children>
+                        <Label fx:id="ErrsignupUser" alignment="CENTER_RIGHT" contentDisplay="RIGHT" textAlignment="RIGHT" textFill="RED">
+                           <font>
+                              <Font name="System Italic" size="11.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="verificationcodeBOX" alignment="CENTER_LEFT" layoutX="125.0" layoutY="204.0" prefHeight="30.0" prefWidth="264.0" style="-fx-background-color: #ffffff; -fx-background-radius: 5px; -fx-border-radius: 5px; -fx-border-color: grey;" visible="false">
+                     <children>
+                        <ImageView opacity="0.55" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/icons8_envelope_16px.png" />
+                           </image>
+                        </ImageView>
+                        <TextField fx:id="txt_Ver" prefHeight="32.0" prefWidth="266.0" promptText="Verification code" style="-fx-background-color: transparent;" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </HBox>
+                  <JFXButton fx:id="RestPasswordBtn" layoutX="126.0" layoutY="250.0" onAction="#RestPWBtnPush" prefHeight="30.0" prefWidth="264.0" style="-fx-background-color: #235BA3; -fx-background-radius: 13px; -fx-border-radius: 13px;" text="Reset" textFill="WHITE" visible="false">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </JFXButton>
+                  <Label fx:id="ErrsignupBsn" layoutX="399.0" layoutY="322.0" textFill="RED">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Label>
+                  <Group>
+                     <children>
+                        <HBox fx:id="spw" alignment="CENTER" layoutX="399.0" layoutY="263.0" onMouseClicked="#spwpressed" prefHeight="24.0" prefWidth="24.0" styleClass="bar-options" stylesheets="@BillinginvoiceStyleSheet.css">
+                           <children>
+                              <ImageView fitHeight="23.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/icons8_eye_120px.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                        <HBox fx:id="hpw" alignment="CENTER" layoutX="399.0" layoutY="263.0" onMouseClicked="#hpwpressed" prefHeight="24.0" prefWidth="24.0" styleClass="bar-options" stylesheets="@BillinginvoiceStyleSheet.css" visible="false">
+                           <children>
+                              <ImageView fitHeight="23.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/icons8_invisible_120px.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                     </children>
+                  </Group>
+                  <Group fx:id="seesign" layoutX="-1.0" layoutY="-54.0">
+                     <children>
+                        <HBox fx:id="spw1" alignment="CENTER" layoutX="399.0" layoutY="262.0" onMouseClicked="#inspwpressed" prefHeight="24.0" prefWidth="24.0" styleClass="bar-options" stylesheets="@BillinginvoiceStyleSheet.css">
+                           <children>
+                              <ImageView fitHeight="23.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/icons8_eye_120px.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                        <HBox fx:id="hpw1" alignment="CENTER" layoutX="399.0" layoutY="263.0" onMouseClicked="#inhpwpressed" prefHeight="24.0" prefWidth="24.0" styleClass="bar-options" stylesheets="@BillinginvoiceStyleSheet.css" visible="false">
+                           <children>
+                              <ImageView fitHeight="23.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/icons8_invisible_120px.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                     </children>
+                  </Group>
+                  <Group fx:id="seeforget" layoutX="-1.0" layoutY="-54.0" visible="false">
+                     <children>
+                        <HBox fx:id="spw11" alignment="CENTER" layoutX="399.0" layoutY="262.0" onMouseClicked="#inspwpressed111" prefHeight="24.0" prefWidth="24.0" styleClass="bar-options" stylesheets="@BillinginvoiceStyleSheet.css">
+                           <children>
+                              <ImageView fitHeight="23.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/icons8_eye_120px.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                        <HBox fx:id="hpw11" alignment="CENTER" layoutX="399.0" layoutY="263.0" onMouseClicked="#inhpwpressed111" prefHeight="24.0" prefWidth="24.0" styleClass="bar-options" stylesheets="@BillinginvoiceStyleSheet.css" visible="false">
+                           <children>
+                              <ImageView fitHeight="23.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/icons8_invisible_120px.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                     </children>
+                  </Group>
+                  <ChoiceBox fx:id="choicebox" layoutX="14.0" layoutY="150.0" minHeight="-Infinity" prefHeight="25.0" prefWidth="101.0" />
+               </children></AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="Layer2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="310.0" style="-fx-background-color: #235BA3;" StackPane.alignment="CENTER_LEFT">
+         <children>
+            <JFXButton fx:id="signInbtn1" layoutX="62.0" layoutY="225.0" onAction="#SlideInbtn" prefHeight="30.0" prefWidth="184.0" style="-fx-background-radius: 13px; -fx-border-radius: 13px; -fx-border-color: white;" text="SIGN IN" textAlignment="CENTER" textFill="WHITE" />
+            <Label fx:id="welcomeLabel" layoutX="64.0" layoutY="76.0" text="Welcome to, TAXAGE" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="FinancialLabel" layoutX="15.0" layoutY="103.0" text="Financial software designed for " textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="ELabel" layoutX="87.0" layoutY="133.0" text="entrepreneurs" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="enterdetailsLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="68.0" layoutY="192.0" prefHeight="17.0" prefWidth="182.0" text="Enter your details to get Started " textAlignment="CENTER" textFill="WHITE" />
+            <JFXButton fx:id="signUPbtn1" layoutX="62.0" layoutY="225.0" onAction="#SlideUPbtn" prefHeight="30.0" prefWidth="184.0" style="-fx-background-radius: 13px; -fx-border-radius: 13px; -fx-border-color: white;" text="SIGN UP" textAlignment="CENTER" textFill="WHITE" />
+            <Label fx:id="CLickindetailsLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="40.0" layoutY="192.0" prefHeight="17.0" prefWidth="236.0" text="Click Sign In if you already have an account" textAlignment="CENTER" textFill="WHITE" />
+            <Label fx:id="alinfoLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="62.0" layoutY="174.0" prefHeight="17.0" prefWidth="182.0" text="Already Registered?" textAlignment="CENTER" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

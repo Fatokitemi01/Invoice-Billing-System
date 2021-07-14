@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="447.0" prefWidth="323.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="billinginvoice.CalculatorController">
+   <children>
+      <AnchorPane prefHeight="357.0" prefWidth="331.0" style="-fx-background-color: #235BA3;" StackPane.alignment="CENTER">
+         <children>
+            <VBox alignment="TOP_CENTER" layoutX="4.0" layoutY="130.0" prefHeight="314.0" prefWidth="315.0" spacing="2.0">
+               <children>
+                  <HBox layoutX="10.0" layoutY="10.0" prefHeight="61.0" prefWidth="323.0" spacing="2.0">
+                     <children>
+                        <HBox alignment="CENTER" onMouseClicked="#percentbuttonClicked" prefHeight="61.0" prefWidth="83.0" styleClass="sidebar-options" stylesheets="@BillinginvoiceStyleSheet.css">
+                           <children>
+                              <Label text="\%">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font></Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" onMouseClicked="#clearbuttonClicked" prefHeight="61.0" prefWidth="83.0" styleClass="sidebar-options" stylesheets="@BillinginvoiceStyleSheet.css">
+                           <children>
+                              <Label text="CE">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font></Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="93.0" layoutY="10.0" onMouseClicked="#backspacebuttonClicked" prefHeight="61.0" prefWidth="83.0" styleClass="sidebar-options" stylesheets="@BillinginvoiceStyleSheet.css">
+                           <children>
+                              <Label text="&lt;--">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font></Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="176.0" layoutY="10.0" onMouseClicked="#dividebuttonClicked" prefHeight="61.0" prefWidth="83.0" styleClass="sidebar-options" stylesheets="@BillinginvoiceStyleSheet.css">
+                           <children>
+                              <Label text="/">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font></Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="71.0" prefHeight="61.0" prefWidth="323.0" spacing="2.0">
+                     <children>
+                        <HBox alignment="CENTER" onMouseClicked="#num7buttonClicked" prefHeight="61.0" prefWidth="83.0" styleClass="sidebar-options" stylesheets="@BillinginvoiceStyleSheet.css">
+                           <children>
+                              <Label text="7">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font></Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" onMouseClicked="#num8buttonClicked" prefHeight="61.0" prefWidth="83.0" styleClass="sidebar-options" stylesheets="@BillinginvoiceStyleSheet.css">
+                           <children>
+                              <Label text="8">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font></Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="93.0" layoutY="10.0" onMouseClicked="#num9buttonClicked" prefHeight="61.0" prefWidth="83.0" styleClass="sidebar-options" stylesheets="@BillinginvoiceStyleSheet.css">
+                           <children>
+                              <Label text="9">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font></Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="176.0" layoutY="10.0" onMouseClicked="#mutiplebuttonClicked" prefHeight="61.0" prefWidth="83.0" styleClass="sidebar-options" stylesheets="@BillinginvoiceStyleSheet.css">
+                           <children>
+                              <Label text="*">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font></Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="132.0" prefHeight="61.0" prefWidth="323.0" spacing="2.0">
+                     <children>
+                        <HBox alignment="CENTER" onMouseClicked="#num4buttonClicked" prefHeight="61.0" prefWidth="83.0" styleClass="sidebar-options" stylesheets="@BillinginvoiceStyleSheet.css">
+                           <children>
+                              <Label text="4">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font></Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" onMouseClicked="#num5buttonClicked" prefHeight="61.0" prefWidth="83.0" styleClass="sidebar-options" stylesheets="@BillinginvoiceStyleSheet.css">
+                           <children>
+                              <Label text="5">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font></Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="93.0" layoutY="10.0" onMouseClicked="#num6buttonClicked" prefHeight="61.0" prefWidth="83.0" styleClass="sidebar-options" stylesheets="@BillinginvoiceStyleSheet.css">
+                           <children>
+                              <Label text="6">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font></Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="176.0" layoutY="10.0" onMouseClicked="#substractbuttonClicked" prefHeight="61.0" prefWidth="83.0" styleClass="sidebar-options" stylesheets="@BillinginvoiceStyleSheet.css">
+                           <children>
+                              <Label text="-">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font></Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="193.0" prefHeight="61.0" prefWidth="323.0" spacing="2.0">
+                     <children>
+                        <HBox alignment="CENTER" onMouseClicked="#num1buttonClicked" prefHeight="61.0" prefWidth="83.0" styleClass="sidebar-options" stylesheets="@BillinginvoiceStyleSheet.css">
+                           <children>
+                              <Label text="1">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font></Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" onMouseClicked="#num2buttonClicked" prefHeight="61.0" prefWidth="83.0" styleClass="sidebar-options" stylesheets="@BillinginvoiceStyleSheet.css">
+                           <children>
+                              <Label text="2">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font></Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="93.0" layoutY="10.0" onMouseClicked="#num3buttonClicked" prefHeight="61.0" prefWidth="83.0" styleClass="sidebar-options" stylesheets="@BillinginvoiceStyleSheet.css">
+                           <children>
+                              <Label text="3">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font></Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="176.0" layoutY="10.0" onMouseClicked="#addbuttonClicked" prefHeight="61.0" prefWidth="83.0" styleClass="sidebar-options" stylesheets="@BillinginvoiceStyleSheet.css">
+                           <children>
+                              <Label text="+">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font></Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="254.0" prefHeight="61.0" prefWidth="323.0" spacing="2.0">
+                     <children>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" onMouseClicked="#num0buttonClicked" prefHeight="60.0" prefWidth="77.0" styleClass="sidebar-options" stylesheets="@BillinginvoiceStyleSheet.css">
+                           <children>
+                              <Label text="0">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font></Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="93.0" layoutY="10.0" onMouseClicked="#dotbuttonClicked" prefHeight="60.0" prefWidth="77.0" styleClass="sidebar-options" stylesheets="@BillinginvoiceStyleSheet.css">
+                           <children>
+                              <Label text=".">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font></Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="176.0" layoutY="10.0" onMouseClicked="#equalbuttonClicked" prefHeight="60.0" prefWidth="157.0" styleClass="sidebar-options" stylesheets="@BillinginvoiceStyleSheet.css">
+                           <children>
+                              <Label text="=">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font></Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox alignment="TOP_RIGHT" layoutX="4.0" layoutY="7.0" prefHeight="114.0" prefWidth="315.0" style="-fx-background-color: white;">
+               <children>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="65.0" prefWidth="315.0">
+                     <children>
+                        <Label fx:id="operateLabel" alignment="CENTER" contentDisplay="CENTER" textAlignment="CENTER">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets right="30.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="BOTTOM_CENTER" prefHeight="114.0" prefWidth="315.0">
+                     <children>
+                        <TextField fx:id="calculatorview" alignment="BASELINE_RIGHT" editable="false" prefHeight="116.0" prefWidth="315.0" style="-fx-background-color: white;">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
